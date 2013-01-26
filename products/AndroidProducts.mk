@@ -28,4 +28,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/stingray.mk \
     $(LOCAL_DIR)/vibrantmtd.mk \
     $(LOCAL_DIR)/ville.mk \
-    $(LOCAL_DIR)/wingray.mk
+    $(LOCAL_DIR)/wingray.mk \
+    $(LOCAL_DIR)/d710.mk
