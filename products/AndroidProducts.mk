@@ -17,7 +17,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/mako.mk \
     $(LOCAL_DIR)/manta.mk \
     $(LOCAL_DIR)/mesmerizemtd.mk \
-    $(LOCAL_DIR)/p3113.mk \
+    $(LOCAL_DIR)/p3110.mk \
     $(LOCAL_DIR)/p5wifi.mk \
     $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/tf201.mk \
