@@ -5,7 +5,7 @@ $(call inherit-product, vendor/baked/configs/cdma.mk)
 $(call inherit-product, device/samsung/mesmerizemtd/full_mesmerizemtd.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
+$(call inherit-product, vendor/baked/configs/common_full.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/aries-common
 

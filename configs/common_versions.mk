@@ -2,11 +2,11 @@
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
 
 # build version number
-BAKED_VERSION = 7
+BAKED_VERSION = 7.1
 
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.baked.version=$(TARGET_PRODUCT)_blackbean-7
+    ro.baked.version=$(TARGET_PRODUCT)_bb-$(BAKED_VERSION)
 
 # Goo updater app
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -15,8 +15,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.version=$(BAKED_VERSION)
 
 # OTA updater
-DATE = $(shell date +"%Y%m%d-%H%M")
+DATE = 20130123-1200
 PRODUCT_PROPERTY_OVERRIDES += \
     otaupdater.otaid=$(TARGET_PRODUCT) \
     otaupdater.otatime=$(DATE) \
-    otaupdater.otaver=blackbean-$(BAKED_VERSION)
+    otaupdater.otaver=$(BAKED_VERSION)
