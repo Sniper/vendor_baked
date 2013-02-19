@@ -11,20 +11,21 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/endeavoru.mk \
     $(LOCAL_DIR)/fascinatemtd.mk \
     $(LOCAL_DIR)/galaxysmtd.mk \
+    $(LOCAL_DIR)/i9100g.mk \
     $(LOCAL_DIR)/i9300.mk \
     $(LOCAL_DIR)/grouper.mk \
     $(LOCAL_DIR)/maguro.mk \
     $(LOCAL_DIR)/mako.mk \
     $(LOCAL_DIR)/manta.mk \
     $(LOCAL_DIR)/mesmerizemtd.mk \
+    $(LOCAL_DIR)/n8000.mk \
+    $(LOCAL_DIR)/n8013.mk \
     $(LOCAL_DIR)/p3110.mk \
     $(LOCAL_DIR)/p5wifi.mk \
     $(LOCAL_DIR)/toro.mk \
-    $(LOCAL_DIR)/tf201.mk \
     $(LOCAL_DIR)/tf300t.mk \
     $(LOCAL_DIR)/tf700t.mk \
     $(LOCAL_DIR)/toroplus.mk \
-    $(LOCAL_DIR)/showcasemtd.mk \
     $(LOCAL_DIR)/stingray.mk \
     $(LOCAL_DIR)/vibrantmtd.mk \
     $(LOCAL_DIR)/ville.mk \

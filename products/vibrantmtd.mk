@@ -1,11 +1,11 @@
-# Inherit AOSP device configuration for crespo.
+# Inherit GSM common stuff
+$(call inherit-product, vendor/baked/configs/gsm.mk)
+
+# Call device makefile.
 $(call inherit-product, device/samsung/vibrantmtd/full_vibrantmtd.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common.mk)
-
-# Inherit GSM common stuff
-$(call inherit-product, vendor/baked/configs/gsm.mk)
+$(call inherit-product, vendor/baked/configs/common_full.mk)
 
 # Inherit Aries-common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/aries-common
@@ -17,7 +17,8 @@ PRODUCT_DEVICE := vibrantmtd
 PRODUCT_MODEL := SGH-T959
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-T959 TARGET_DEVICE=SGH-T959 BUILD_FINGERPRINT=google/soju/crespo:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="soju-user 2.3.4 GRJ22 121341 release-keys"
+# Build fingerprint / ID / Product name etc.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-T959 TARGET_DEVICE=SGH-T959 BUILD_FINGERPRINT=Samsung/SGH-T959/SGH-T959/SGH-T959:2.2/FROYO/UVKB5:user/release-keys PRIVATE_BUILD_DESC="SGH-T959-user 2.2 FROYO UVKB5 release-keys"
 
 PRODUCT_PACKAGES += \
     Thinkfree
