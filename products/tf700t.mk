@@ -19,7 +19,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=EeePad BUILD_FINGERPRINT=asus/US_ep
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/baked/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
+    vendor/baked/prebuilt/bootanimation/bootanimation_1920_1200.zip:system/media/bootanimation.zip
 
 # Inherit additional apps to install
 $(call inherit-product, vendor/baked/prebuilt/asus_common/device_vendor.mk)
