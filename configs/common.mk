@@ -18,7 +18,9 @@ PRODUCT_PACKAGES += \
     Superuser \
     su \
     Trebuchet \
-    LockClock
+    LockClock \
+    XposedDPI \
+    XposedInstaller
 
 # DSPManager and libs necessary for it
 PRODUCT_PACKAGES += \
