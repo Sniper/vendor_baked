@@ -13,6 +13,7 @@ PRODUCT_PACKAGES += \
     Development \
     Microbes \
     OTAUpdateCenter \
+    PerformanceControl \
     ROMControl \
     SoundRecorder \
     Superuser \
