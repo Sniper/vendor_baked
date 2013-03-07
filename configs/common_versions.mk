@@ -6,7 +6,7 @@ BAKED_VERSION = 8
 
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.baked.version=$(TARGET_PRODUCT)_bb-8_$(shell date +%0d%^b%Y-%H%M%S)
+    ro.baked.version=$(TARGET_PRODUCT)_bb-8_$(shell date +%Y%m%d)
 
 # Goo updater app
 PRODUCT_PROPERTY_OVERRIDES += \
