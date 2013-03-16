@@ -1,11 +1,11 @@
-# Inherit AOSP device configuration for d710.
-$(call inherit-product, device/samsung/d710/full_d710.mk)
-
-# Inherit some common BAKED stuff.
+# Inherit CDMA make.
 $(call inherit-product, vendor/baked/configs/cdma.mk)
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit device configuration for d710.
+$(call inherit-product, device/samsung/d710/full_d710.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d710
 
