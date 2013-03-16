@@ -1,11 +1,11 @@
-# Inherit AOSP device configuration for maguro.
-$(call inherit-product, device/samsung/maguro/full_maguro.mk)
+# Inherit GSM make.
+$(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/baked/configs/gsm.mk)
+# Inherit AOSP device configuration for maguro.
+$(call inherit-product, device/samsung/maguro/full_maguro.mk)
 
 # Tuna overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tuna

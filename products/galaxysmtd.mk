@@ -1,11 +1,11 @@
-# Inherit AOSP device configuration for crespo.
-$(call inherit-product, device/samsung/galaxysmtd/full_galaxysmtd.mk)
+# Inherit GSM make.
+$(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/baked/configs/gsm.mk)
+# Inherit device configuration for galaxymtd.
+$(call inherit-product, device/samsung/galaxysmtd/full_galaxysmtd.mk)
 
 # Inherit Aries-common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/aries-common

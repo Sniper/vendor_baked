@@ -1,8 +1,8 @@
-# Inherit device configuration for tf300t.
-$(call inherit-product, device/asus/tf700t/full_tf700t.mk)
-
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_tablet.mk)
+
+# Inherit device configuration for tf700t.
+$(call inherit-product, device/asus/tf700t/full_tf700t.mk)
 
 # PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tf-common
 

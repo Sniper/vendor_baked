@@ -1,8 +1,11 @@
+# Inherit CDMA common make
+$(call inherit-product, vendor/baked/configs/cdma.mk)
+
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full.mk)
+
 # Inherit AOSP device configuration for crespo4g.
 $(call inherit-product, device/samsung/crespo4g/full_crespo4g.mk)
-
-# Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common_full.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/crespo4g
 

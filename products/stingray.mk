@@ -1,8 +1,11 @@
-# Inherit device configuration
-$(call inherit-product, device/moto/stingray/full_stingray.mk)
+# Inherit CDMA make.
+# Apns called in device tree
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_tablet.mk)
+
+# Inherit AOSP device configuration for stingray.
+$(call inherit-product, device/moto/stingray/full_stingray.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/stingray
 

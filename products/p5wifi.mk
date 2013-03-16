@@ -1,8 +1,8 @@
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
+
 # Inherit device configuration for p5wifi.
 $(call inherit-product, device/samsung/p5wifi/p5wifi.mk)
-
-# Inherit common baked configuration.
-$(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
 
 # Setup device specific product configuration.
 PRODUCT_NAME := baked_p5wifi

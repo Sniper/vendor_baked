@@ -106,8 +106,7 @@ PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/baked/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
     vendor/baked/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/baked/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
-    vendor/baked/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/baked/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 
 # Backup Tool
 PRODUCT_COPY_FILES += \

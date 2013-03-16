@@ -1,11 +1,11 @@
-# Inherit AOSP device configuration for d2tmo.
-$(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
-
-# Inherit GSM common stuff
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit device configuration for d2tmo.
+$(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2-common
 

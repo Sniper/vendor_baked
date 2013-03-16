@@ -1,10 +1,10 @@
-# Inherit AOSP device configuration for n8000
-$(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
-
-# Inherit GSM common stuff
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit device configuration
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
+
+# Inherit device configuration for n8000.
 $(call inherit-product, device/samsung/n8000/full_n8000.mk)
 
 # Device identifier. This must come after all inclusions

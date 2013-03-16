@@ -1,11 +1,11 @@
-# Inherit AOSP device configuration for ville.
-$(call inherit-product, device/htc/ville/device_ville.mk)
+# Inherit GSM make.
+$(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/baked/configs/gsm.mk)
+# Inherit device configuration for ville.
+$(call inherit-product, device/htc/ville/device_ville.mk)
 
 # Setup device specific product configuration.
 PRODUCT_NAME := baked_ville

@@ -1,11 +1,11 @@
-# Inherit device configuration
-$(call inherit-product, device/samsung/p3110/full_p3110.mk)
-
-## Specify phone tech before including full_phone
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit some common BAKED stuff.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_tablet.mk)
+
+# Inherit device configuration for p3110.
+$(call inherit-product, device/samsung/p3110/full_p3110.mk)
 
 # PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/p3100
 

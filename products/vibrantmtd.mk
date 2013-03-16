@@ -1,11 +1,11 @@
-# Inherit GSM common stuff
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Call device makefile.
-$(call inherit-product, device/samsung/vibrantmtd/full_vibrantmtd.mk)
-
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit device configuration for vibrantmtd.
+$(call inherit-product, device/samsung/vibrantmtd/full_vibrantmtd.mk)
 
 # Inherit Aries-common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/aries-common

@@ -1,8 +1,11 @@
+# Inherit CDMA make.
+# Apns called in device tree.
+
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full.mk)
+
 # Inherit AOSP device configuration for toro.
 $(call inherit-product, device/samsung/toro/full_toro.mk)
-
-# Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common_full.mk)
 
 # Tuna overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tuna

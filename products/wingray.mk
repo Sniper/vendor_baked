@@ -1,8 +1,8 @@
-# Inherit device configuration
-$(call inherit-product, device/moto/wingray/full_wingray.mk)
-
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_tablet.mk)
+
+# Inherit AOSP device configuration for wingray.
+$(call inherit-product, device/moto/wingray/full_wingray.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/wingray
 

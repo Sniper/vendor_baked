@@ -1,11 +1,11 @@
-# Inherit AOSP device configuration for d2vzw.
-$(call inherit-product, device/samsung/d2vzw/full_d2vzw.mk)
-
-# Inherit common cdma apns
+# Inherit CDMA make.
 $(call inherit-product, vendor/baked/configs/cdma.mk)
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit device configuration for d2vzw.
+$(call inherit-product, device/samsung/d2vzw/full_d2vzw.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2vzw
 
@@ -21,4 +21,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2vzw TARGET_DEVICE=d2vzw BUILD_FIN
 # boot animation
 PRODUCT_COPY_FILES += \
     vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
-

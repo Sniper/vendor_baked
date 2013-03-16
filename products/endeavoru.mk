@@ -1,11 +1,11 @@
-# Inherit the endeavoru device
-$(call inherit-product, device/htc/endeavoru/full_endeavoru.mk)
-
-# Specify phone tech before including full_phone
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit device configuration for endeavoru.
+$(call inherit-product, device/htc/endeavoru/full_endeavoru.mk)
 
 DEVICE_PACKAGE_OVERLAYS += vendor/baked/overlay/endeavoru
 

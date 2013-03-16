@@ -1,8 +1,8 @@
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
+
 # Inherit AOSP device configuration for grouper
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
-
-# Inherit common product files.
-$(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
 
 # Setup device specific product configuration.
 PRODUCT_NAME := baked_grouper

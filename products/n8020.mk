@@ -1,9 +1,10 @@
-$(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
-
-# Inherit GSM common stuff
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit device configuration
+# Inherit BAKED configuration.
+$(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
+
+# Inherit device configuration for n8020.
 $(call inherit-product, device/samsung/n8020/full_n8020.mk)
 
 # Device identifier. This must come after all inclusions

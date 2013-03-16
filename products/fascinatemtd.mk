@@ -1,6 +1,10 @@
+# Inherit CDMA make.
+$(call inherit-product, vendor/baked/configs/cdma.mk)
+
+# Inherit device tree configuration for fascinatemtd.
 $(call inherit-product, device/samsung/fascinatemtd/full_fascinatemtd.mk)
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/aries-common

@@ -1,10 +1,11 @@
-$(call inherit-product, device/samsung/d2att/full_d2att.mk)
-
-# Inherit some common CM stuff.
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit device configuration for d2att.
+$(call inherit-product, device/samsung/d2att/full_d2att.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2att
 

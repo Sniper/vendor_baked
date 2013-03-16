@@ -1,6 +1,7 @@
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
 
-# Inherit device configuration
+# Inherit device configuration for n8010.
 $(call inherit-product, device/samsung/n8010/full_n8010.mk)
 
 # Device identifier. This must come after all inclusions

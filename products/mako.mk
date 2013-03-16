@@ -1,11 +1,11 @@
-# Inherit AOSP device configuration for mako
-$(call inherit-product, device/lge/mako/full_mako.mk)
-
-# Inherit GSM common stuff
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit baked common bits
+# Inherit BAKED configuration
 $(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit AOSP device configuration for mako.
+$(call inherit-product, device/lge/mako/full_mako.mk)
 
 # Mako Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/mako

@@ -1,8 +1,8 @@
-# Inherit AOSP device configuration for mako
-$(call inherit-product, device/samsung/manta/full_manta.mk)
-
-# Inherit baked common_tablet bits
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
+
+# Inherit AOSP device configuration for manta.
+$(call inherit-product, device/samsung/manta/full_manta.mk)
 
 # Manta Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/manta

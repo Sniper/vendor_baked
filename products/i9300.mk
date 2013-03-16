@@ -1,11 +1,11 @@
-# Inherit device configuration
-$(call inherit-product, device/samsung/i9300/full_i9300.mk)
-
-# Specify phone tech before including full_phone
+# Inherit GSM make.
 $(call inherit-product, vendor/baked/configs/gsm.mk)
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit device configuration for i9300.
+$(call inherit-product, device/samsung/i9300/full_i9300.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2-common
 

@@ -1,10 +1,11 @@
-$(call inherit-product, device/samsung/d2mtr/full_d2mtr.mk)
-
 # Inherit cdma stuff.
 $(call inherit-product, vendor/baked/configs/cdma.mk)
 
-# Inherit common product files.
+# Inherit BAKED configuration.
 $(call inherit-product, vendor/baked/configs/common_full.mk)
+
+# Inherit device configuration for d2mtr.
+$(call inherit-product, device/samsung/d2mtr/full_d2mtr.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/d2vzw
 
