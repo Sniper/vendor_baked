@@ -4,7 +4,7 @@ $(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
 # Inherit device configuration for tf201.
 $(call inherit-product, device/asus/tf201/full_tf201.mk)
 
-# PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tf-common
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/tf-common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := baked_tf201

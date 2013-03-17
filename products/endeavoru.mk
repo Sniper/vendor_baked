@@ -28,6 +28,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=endeavoru BUILD_FINGERPRINT="htc_eu
 # Copy over prebuilt boot animation
 PRODUCT_COPY_FILES +=  \
     vendor/baked/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
-
-PRODUCT_COPY_FILES += \
-    vendor/baked/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml \
