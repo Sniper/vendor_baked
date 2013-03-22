@@ -4,6 +4,9 @@ $(call inherit-product, vendor/baked/configs/common_full_tablet.mk)
 # Inherit device configuration for n801x.
 $(call inherit-product, device/samsung/n801x/full_n801x.mk)
 
+# Add overlay to allow Torch Toggle
+PRODUCT_PACKAGE_OVERLAYS += vendor/baked/overlay/n80xx-common 
+
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := baked_n801x
 PRODUCT_BRAND := samsung
