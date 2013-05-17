@@ -7,6 +7,8 @@ $(call inherit-product, vendor/baked/configs/common_full.mk)
 # Inherit device configuration for ville.
 $(call inherit-product, device/htc/ville/device_ville.mk)
 
+DEVICE_PACKAGE_OVERLAYS += vendor/baked/overlay/ville
+
 # Setup device specific product configuration.
 PRODUCT_NAME := baked_ville
 PRODUCT_BRAND := HTC
